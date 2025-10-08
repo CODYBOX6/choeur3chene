@@ -27,13 +27,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Fermer le menu mobile lors du clic sur un lien
+    // Fermer le menu mobile lors du clic sur un lien (sauf dropdown-toggle)
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             if (window.innerWidth <= 768) {
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('active');
-                document.body.classList.remove('nav-open');
+                // Ne fermer le menu que si ce n'est PAS un dropdown-toggle
+                if (!this.classList.contains('dropdown-toggle')) {
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.classList.remove('nav-open');
+                    
+                    // Fermer tous les dropdowns quand on navigue
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove('active');
+                        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+                        if (dropdownMenu) dropdownMenu.classList.remove('active');
+                    });
+                }
             }
         });
     });
@@ -61,6 +71,25 @@ document.addEventListener('DOMContentLoaded', function() {
                     dropdown.classList.toggle('active');
                     dropdownMenu.classList.toggle('active');
                 }
+            });
+            
+            // Fermer le menu quand on clique sur un lien dans le dropdown
+            const dropdownLinks = dropdownMenu.querySelectorAll('a');
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        navToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        document.body.classList.remove('nav-open');
+                        
+                        // Fermer tous les dropdowns
+                        dropdowns.forEach(dropdown => {
+                            dropdown.classList.remove('active');
+                            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+                            if (dropdownMenu) dropdownMenu.classList.remove('active');
+                        });
+                    }
+                });
             });
         }
     });
