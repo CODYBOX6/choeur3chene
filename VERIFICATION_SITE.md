@@ -37,7 +37,7 @@ Tous les 7 membres correspondent exactement :
 
 ## 6. ✅ **DIRECTEUR**
 - **Nom** : Semaan Jamil ✓
-- **Pianiste** : John Rabbi Limagbas ✓
+- **Pianiste** : John Rabbi Lumagbas ✓
 
 ## 7. ✅ **RÉPERTOIRE**
 - Chants choraux traditionnels ✓

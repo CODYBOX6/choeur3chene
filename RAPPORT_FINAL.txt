@@ -22,7 +22,7 @@
 │ Nombre de choristes            │ ~30             │    ✅    │
 │ Nombre de pupitres             │ 4               │    ✅    │
 │ Directeur                      │ Semaan Jamil    │    ✅    │
-│ Pianiste                       │ John R. Limagbas│    ✅    │
+│ Pianiste                       │ John R. Lumagbas│    ✅    │
 │ Email                          │ c3chene@...     │    ✅    │
 │ Téléphone                      │ 022 349 24 44   │    ✅    │
 │ Contact                        │ Monique Fournier│    ✅    │
