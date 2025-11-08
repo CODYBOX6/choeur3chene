@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Chœur des Trois-Chêne</title>
+    <title>Infos pratiques - Chœur des Trois-Chêne</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
@@ -25,7 +25,7 @@
                 </button>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-users"></i> L'association <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
@@ -34,7 +34,7 @@
                             <li><a href="but.html">Notre but</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="infos-pratiques.html" class="nav-link"><i class="fas fa-info-circle"></i> Infos pratiques</a></li>
+                    <li class="nav-item"><a href="infos-pratiques.html" class="nav-link active"><i class="fas fa-info-circle"></i> Infos pratiques</a></li>
                     <li class="nav-item"><a href="galerie.html" class="nav-link"><i class="fas fa-images"></i> Galerie</a></li>
                     <li class="nav-item"><a href="prochains-concerts.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Prochains concerts</a></li>
                 </ul>
@@ -43,24 +43,40 @@
     </header>
 
     <section class="page-header" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--white); padding: 120px 0 4rem; text-align: center;">
-        <h1 style="font-family: var(--font-heading); font-size: 3rem;">Contact</h1>
+        <h1 style="font-family: var(--font-heading); font-size: 3rem;">Informations pratiques</h1>
     </section>
 
     <section style="padding: 5rem 2rem;">
-        <div class="container" style="max-width: 600px;">
-            <div style="background: var(--white); padding: 3rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
-                <div style="margin-bottom: 2rem;">
-                    <i class="fas fa-envelope" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
-                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Email</h3>
-                    <a href="mailto:c3chene@gmail.com" style="color: var(--secondary-color); font-size: 1.2rem; text-decoration: none; font-weight: 600;">c3chene@gmail.com</a>
+        <div class="container" style="max-width: 800px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
+                    <i class="fas fa-map-marker-alt" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Lieu</h3>
+                    <p style="color: var(--gray);">Salle place Favre<br>Chêne-Bourg, Genève</p>
                 </div>
 
-                <div>
-                    <i class="fas fa-phone" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
-                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Téléphone</h3>
-                    <p style="color: var(--gray); margin-bottom: 0.5rem;">Anne Grandjean</p>
-                    <a href="tel:0223480363" style="color: var(--secondary-color); font-size: 1.2rem; text-decoration: none; font-weight: 600;">022 348 03 63</a>
+                <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
+                    <i class="fas fa-clock" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Horaires</h3>
+                    <p style="color: var(--gray);">Mardis 20h00 - 22h00</p>
                 </div>
+
+                <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
+                    <i class="fas fa-train" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Accès</h3>
+                    <p style="color: var(--gray);">Tram 12 et 17<br>Arrêt "Chêne-Bourg"</p>
+                </div>
+
+                <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
+                    <i class="fas fa-euro-sign" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Cotisation</h3>
+                    <p style="color: var(--gray);">200 CHF/an<br><small>Partitions incluses</small></p>
+                </div>
+            </div>
+
+            <div style="background: var(--light-gray); padding: 2rem; border-radius: var(--border-radius); margin-top: 3rem; text-align: center;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">IBAN pour le paiement</h3>
+                <p style="font-family: 'Courier New', monospace; font-size: 1.1rem; color: var(--gray);">CH82 0900 0000 1728 8749 3</p>
             </div>
         </div>
     </section>
