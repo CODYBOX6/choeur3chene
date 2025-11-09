@@ -162,7 +162,7 @@ body {
 }
 
 .navbar {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .navbar .container {
@@ -180,14 +180,14 @@ body {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
 .brand-text {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -284,7 +284,7 @@ body {
     min-height: 70vh;
     display: flex;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 3rem;
     background: linear-gradient(135deg, var(--light-gray) 0%, rgba(248, 249, 250, 0.8) 100%);
     overflow: hidden;
