@@ -22,14 +22,59 @@
         gap: 3rem;
         text-align: center;
     }
-    
+
     .hero-title {
         font-size: 3rem;
     }
-    
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+
+    /* Next concert card tablet */
+    .next-concert-card {
+        grid-template-columns: 1fr;
+    }
+
+    .concert-image {
+        height: 300px;
+        order: -1;
+    }
+
+    /* Gallery preview tablet */
+    .gallery-preview-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px;
+    }
+
+    .gallery-preview-item.large {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    /* About preview tablet */
+    .about-preview-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .about-image::before {
+        display: none;
+    }
+
+    /* Footer tablet */
+    .footer-links-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -256,12 +301,73 @@
         gap: 2rem;
         text-align: center;
     }
-    
+
     .footer-logo {
         justify-content: center;
     }
-    
+
     .footer-social {
+        justify-content: center;
+    }
+
+    /* Stats section mobile */
+    .stats-row {
+        gap: 1.5rem;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .stat-number-lg {
+        font-size: 2.2rem;
+    }
+
+    .stat-text {
+        font-size: 0.8rem;
+    }
+
+    /* Next concert mobile */
+    .concert-info {
+        padding: 2rem;
+    }
+
+    .concert-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .concert-details .detail {
+        font-size: 1rem;
+    }
+
+    /* Gallery preview mobile */
+    .gallery-preview-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 200px);
+    }
+
+    .gallery-preview-item.large {
+        grid-column: span 1;
+    }
+
+    /* About preview mobile */
+    .about-text .section-title {
+        text-align: center !important;
+    }
+
+    /* Footer new layout mobile */
+    .footer-brand {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-column h4 {
         justify-content: center;
     }
 }

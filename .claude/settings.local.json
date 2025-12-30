@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(gif2webp:*)",
+      "Bash(echo:*)",
+      "Bash(git push origin main)",
+      "Bash(git reset --soft HEAD~2)",
+      "Bash(git reset HEAD \"assets/Choeur et orchestre 28.09.2025.pdf\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
