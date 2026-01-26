@@ -288,38 +288,7 @@ body {
     align-items: center;
     padding-top: 80px;
     padding-bottom: 3rem;
-    background: var(--primary-color);
     overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('../assets/C3C concert juin 2024.webp') center center / cover no-repeat;
-    opacity: 0.25;
-}
-
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('../assets/music-notes-pattern.svg') repeat;
-    opacity: 0.08;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(26, 26, 46, 0.6);
 }
 
 .hero .container {
