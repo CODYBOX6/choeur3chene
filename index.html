@@ -102,7 +102,7 @@
                 <div class="hero-buttons">
                     <a href="https://infomaniak.events/fr-ch/concerts/deux-choeurs-une-voix-choeur-des-trois-chene-belle-terre-chante/2fc0964a-fa63-4b5d-8907-6a0d31b59ea5/event/1576916" target="_blank" class="btn btn-outline">
                         <i class="fas fa-ticket-alt"></i>
-                        Réserver pour le 2 mai
+                        Réserver pour le prochain concert
                     </a>
                 </div>
             </div>
@@ -114,7 +114,7 @@
         <div class="container">
             <div class="stats-row">
                 <div class="stat-item-inline">
-                    <span class="stat-number-lg">75</span>
+                    <span class="stat-number-lg" id="years-history">75</span>
                     <span class="stat-text">ans d'histoire</span>
                 </div>
                 <div class="stat-divider"></div>
@@ -123,6 +123,13 @@
                     <span class="stat-text">choristes</span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Photo du chœur avec orchestre -->
+    <section style="padding: 0; background: var(--bg-secondary);">
+        <div class="container" style="max-width: 1100px; padding: 3rem 2rem;">
+            <img src="assets/choeur-orchestre.jpg" alt="Le Chœur des Trois-Chêne avec orchestre" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
         </div>
     </section>
 
@@ -219,6 +226,28 @@
         </div>
     </section>
 
+    <!-- Remerciements -->
+    <section style="background: var(--primary-color); color: var(--white); padding: 4rem 2rem; text-align: center;">
+        <div class="container" style="max-width: 900px;">
+            <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem; letter-spacing: 1px;">Remerciements</h3>
+            <div style="width: 60px; height: 3px; background: var(--accent-color); margin: 0 auto 2rem;"></div>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.8; opacity: 0.95;">
+                Nous remercions chaleureusement les communes qui nous soutiennent depuis de nombreuses années
+            </p>
+            <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+                <div style="padding: 1rem;">
+                    <p style="font-size: 1.1rem; font-weight: 500;">La Commune de Chêne-Bourg</p>
+                </div>
+                <div style="padding: 1rem;">
+                    <p style="font-size: 1.1rem; font-weight: 500;">La Ville de Chêne-Bougeries</p>
+                </div>
+                <div style="padding: 1rem;">
+                    <p style="font-size: 1.1rem; font-weight: 500;">La Ville de Thônex</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -241,17 +270,17 @@
                     <div class="footer-column">
                         <h4><i class="fas fa-music"></i> Répétitions</h4>
                         <ul>
-                            <li>Mardis à 20h00</li>
+                            <li>Mardi à 20h00</li>
                             <li>Salle place Favre</li>
-                            <li>Chêne-Bougeries</li>
+                            <li>Chêne-Bourg</li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h4><i class="fas fa-link"></i> Liens rapides</h4>
                         <ul>
                             <li><a href="pages/galerie.html">Galerie photos</a></li>
-                            <li><a href="pages/prochains-concerts.html">Prochains concerts</a></li>
                             <li><a href="pages/recrutement.html">Nous rejoindre</a></li>
+                            <li><a href="pages/infos-pratiques.html">Infos pratiques</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -272,5 +301,9 @@
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
+    <script>
+        // Calcul automatique des années depuis 1950
+        document.getElementById('years-history').textContent = new Date().getFullYear() - 1950;
+    </script>
 </body>
 </html>
