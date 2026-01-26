@@ -10,12 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
     <header class="header">
         <nav class="navbar">
             <div class="container">
                 <div class="nav-brand">
-                    <img src="../assets/logo.svg" alt="Chœur des Trois-Chêne" class="logo">
+                    <img src="../assets/logo.png" alt="Chœur des Trois-Chêne" class="logo">
                 </div>
                 <button class="nav-toggle" aria-label="Ouvrir le menu">
                     <span class="hamburger"></span>
@@ -35,17 +35,16 @@
                     </li>
                     <li class="nav-item"><a href="infos-pratiques.html" class="nav-link"><i class="fas fa-info-circle"></i> Infos pratiques</a></li>
                     <li class="nav-item"><a href="galerie.html" class="nav-link"><i class="fas fa-images"></i> Galerie</a></li>
-                    <li class="nav-item"><a href="prochains-concerts.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Prochains concerts</a></li>
-                </ul>
+                                    </ul>
             </div>
         </nav>
     </header>
 
-    <section class="page-header" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--white); padding: 100px 0 3rem; text-align: center;">
+    <section class="page-header" style="background: var(--secondary-color); color: var(--white); padding: 100px 0 3rem; text-align: center;">
         <h1 style="font-family: var(--font-heading); font-size: 3rem;">Contact</h1>
     </section>
 
-    <section style="padding: 5rem 2rem;">
+    <section style="padding: 5rem 2rem; flex: 1;">
         <div class="container" style="max-width: 600px;">
             <div style="background: var(--white); padding: 3rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
                 <div style="margin-bottom: 2rem;">
@@ -58,7 +57,7 @@
                     <i class="fas fa-phone" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
                     <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Téléphone</h3>
                     <p style="color: var(--gray); margin-bottom: 0.5rem;">Anne Grandjean</p>
-                    <a href="tel:0223480363" style="color: var(--secondary-color); font-size: 1.2rem; text-decoration: none; font-weight: 600;">022 348 03 63</a>
+                    <p style="color: var(--secondary-color); font-size: 1.2rem; font-weight: 600;">022 349 03 63</p>
                 </div>
             </div>
         </div>

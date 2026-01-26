@@ -346,8 +346,8 @@ body {
 }
 
 .hero-title .accent-text {
-    color: #ffffff;
-    -webkit-text-fill-color: #ffffff;
+    color: var(--secondary-color);
+    -webkit-text-fill-color: var(--secondary-color);
 }
 
 .hero-subtitle {

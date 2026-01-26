@@ -10,12 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
     <header class="header">
         <nav class="navbar">
             <div class="container">
                 <div class="nav-brand">
-                    <img src="../assets/logo.svg" alt="Chœur des Trois-Chêne" class="logo">
+                    <img src="../assets/logo.png" alt="Chœur des Trois-Chêne" class="logo">
                 </div>
                 <button class="nav-toggle" aria-label="Ouvrir le menu">
                     <span class="hamburger"></span>
@@ -35,49 +35,44 @@
                     </li>
                     <li class="nav-item"><a href="infos-pratiques.html" class="nav-link active"><i class="fas fa-info-circle"></i> Infos pratiques</a></li>
                     <li class="nav-item"><a href="galerie.html" class="nav-link"><i class="fas fa-images"></i> Galerie</a></li>
-                    <li class="nav-item"><a href="prochains-concerts.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Prochains concerts</a></li>
-                </ul>
+                                    </ul>
             </div>
         </nav>
     </header>
 
-    <section class="page-header" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--white); padding: 100px 0 3rem; text-align: center;">
+    <section class="page-header" style="background: var(--secondary-color); color: var(--white); padding: 100px 0 3rem; text-align: center;">
         <h1 style="font-family: var(--font-heading); font-size: 3rem;">Informations pratiques</h1>
     </section>
 
-    <section style="padding: 5rem 2rem;">
+    <section style="padding: 5rem 2rem; flex: 1;">
         <div class="container" style="max-width: 800px;">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                 <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
                     <i class="fas fa-map-marker-alt" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
                     <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Lieu</h3>
-                    <p style="color: var(--gray);">Salle place Favre<br>Chêne-Bourg, Genève</p>
+                    <p style="color: var(--gray);">Salle de réunion de l'École de la Place Favre<br>Av. François Grison 1<br>1225 Chêne-Bourg</p>
                 </div>
 
                 <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
                     <i class="fas fa-clock" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Horaires</h3>
-                    <p style="color: var(--gray);">Mardis 20h00 - 22h00</p>
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Horaire</h3>
+                    <p style="color: var(--gray);">Mardi 20h00 - 22h00</p>
                 </div>
 
                 <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
                     <i class="fas fa-train" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
                     <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Accès</h3>
-                    <p style="color: var(--gray);">Tram 12 et 17<br>Arrêt "Chêne-Bourg"</p>
+                    <p style="color: var(--gray);">Tram 12 et 17<br>Bus 41<br>Arrêt "Chêne-Bourg"</p>
                 </div>
 
                 <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center;">
-                    <i class="fas fa-euro-sign" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+                    <i class="fas fa-swiss-franc-sign" style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
                     <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Cotisation</h3>
                     <p style="color: var(--gray);">200 CHF/an<br><small>Partitions incluses</small></p>
                 </div>
             </div>
 
-            <div style="background: var(--light-gray); padding: 2rem; border-radius: var(--border-radius); margin-top: 3rem; text-align: center;">
-                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">IBAN pour le paiement</h3>
-                <p style="font-family: 'Courier New', monospace; font-size: 1.1rem; color: var(--gray);">CH82 0900 0000 1728 8749 3</p>
-            </div>
-        </div>
+                    </div>
     </section>
 
     <footer class="footer">

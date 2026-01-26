@@ -22,7 +22,7 @@
         <nav class="navbar">
             <div class="container">
                 <div class="nav-brand">
-                    <img src="../assets/logo.svg" alt="Chœur des Trois-Chêne" class="logo">
+                    <img src="../assets/logo.png" alt="Chœur des Trois-Chêne" class="logo">
                 </div>
                 
                 <button class="nav-toggle" aria-label="Ouvrir le menu">
@@ -44,8 +44,7 @@
                     </li>
                     <li class="nav-item"><a href="infos-pratiques.html" class="nav-link"><i class="fas fa-info-circle"></i> Infos pratiques</a></li>
                     <li class="nav-item"><a href="galerie.html" class="nav-link active"><i class="fas fa-images"></i> Galerie</a></li>
-                    <li class="nav-item"><a href="prochains-concerts.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Prochains concerts</a></li>
-                </ul>
+                                    </ul>
             </div>
         </nav>
     </header>
@@ -68,30 +67,6 @@
     <!-- Galerie principale -->
     <section class="gallery-section">
         <div class="container">
-            <!-- Filtres -->
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">
-                    <i class="fas fa-th"></i>
-                    Toutes les photos
-                </button>
-                <button class="filter-btn" data-filter="concerts">
-                    <i class="fas fa-microphone-alt"></i>
-                    Concerts
-                </button>
-                <button class="filter-btn" data-filter="repetitions">
-                    <i class="fas fa-music"></i>
-                    Répétitions
-                </button>
-                <button class="filter-btn" data-filter="convivialite">
-                    <i class="fas fa-glass-cheers"></i>
-                    Convivialité
-                </button>
-                <button class="filter-btn" data-filter="evenements">
-                    <i class="fas fa-calendar-star"></i>
-                    Événements
-                </button>
-            </div>
-
             <!-- Grille de photos -->
             <div class="gallery-grid" id="galleryGrid">
                 <!-- Concert juin 2024 -->
@@ -184,30 +159,7 @@
         </div>
     </section>
 
-    <!-- Statistics -->
-    <section class="gallery-stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number" id="totalPhotos">6</div>
-                    <div class="stat-label">Photos disponibles</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">40+</div>
-                    <div class="stat-label">Années d'histoire</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">4</div>
-                    <div class="stat-label">Types d'événements</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">∞</div>
-                    <div class="stat-label">Souvenirs créés</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox" style="display: none;">
         <div class="lightbox-content">
@@ -238,36 +190,13 @@
         </div>
     </div>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Rejoignez-nous pour créer de nouveaux souvenirs !</h2>
-                <p>
-                    Ces images racontent notre histoire, mais les plus belles pages 
-                    restent à écrire avec vous. Venez partager la passion du chant !
-                </p>
-                <div class="cta-buttons">
-                    <a href="recrutement.html" class="btn btn-primary">
-                        <i class="fas fa-microphone"></i>
-                        Nous rejoindre
-                    </a>
-                    <a href="contact.html" class="btn btn-outline">
-                        <i class="fas fa-envelope"></i>
-                        Nous contacter
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
         <footer class="footer">
         <div class="container">
             <div class="footer-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
                 <div>
                     <p style="font-weight: 600; margin-bottom: 0.5rem;">c3chene@gmail.com</p>
-                    <p>Anne Grandjean : 022 348 03 63</p>
+                    <p>Anne Grandjean : 022 349 03 63</p>
                 </div>
                 <div>
                     <p style="font-weight: 600; margin-bottom: 0.5rem;">Répétitions</p>
@@ -288,7 +217,7 @@
     <!-- Styles pour la galerie -->
     <style>
         .page-header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: var(--secondary-color);
             color: var(--white);
             padding: 100px 0 3rem;
             position: relative;
